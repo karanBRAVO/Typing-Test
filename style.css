@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+/* font-family: 'Noto Sans JP', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: white;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.mainContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3px;
+}
+
+.mainContainer .innerContainer {
+    padding: 10px;
+}
+
+.mainContainer .innerContainer .subHeadingContainer {
+    padding: 1px;
+    margin: 1px;
+}
+
+.mainContainer .innerContainer .subHeadingContainer .subHeading {
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
+
+.mainContainer .innerContainer .subHeadingContainer .subHeading h4 {
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer .innerContainer .headingContainer {
+    padding: 2px;
+    margin: 2px;
+}
+
+.mainContainer .innerContainer .headingContainer .heading {
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+}
+
+.mainContainer .innerContainer .headingContainer .heading h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+.mainContainer .innerContainer .boxContainer,
+.mainContainer .innerContainer .boxContainer .chartContainer {
+    padding: 3px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainContainer .innerContainer .boxContainer {
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.mainContainer .innerContainer .boxContainer .countContainer {
+    margin: 2px;
+}
+
+.mainContainer .innerContainer .boxContainer .countContainer,
+.mainContainer .innerContainer .boxContainer .chartContainer .chart {
+    padding: 3.5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.5px;
+    border: 1px solid black;
+    width: 100px;
+    height: auto;
+}
+
+.mainContainer .innerContainer .boxContainer .chartContainer .chart {
+    margin: 0 10px;
+}
+
+.box {
+    text-align: center;
+    padding: 8px 2px;
+    background-color: gold;
+    border-radius: 2px;
+    border: 2px solid gold;
+}
+
+.box span {
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.7em;
+}
+
+.tag {
+    padding: 0 5px;
+    margin: 0.5px;
+    text-align: center;
+}
+
+.tag p {
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
+    text-transform: lowercase;
+}
+
+.mainContainer .innerContainer .speedCheckBoxCont {
+    padding: 6px 7px;
+    margin: 44px 3px;
+}
+
+.mainContainer .innerContainer .speedCheckBoxCont .speedCheckBox {
+    padding: 3px;
+    margin: 1px;
+}
+
+.speedCheckBox::before {
+    content: "Click and start typing test || word is given below";
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 7px;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 4px 6px;
+    color: black;
+    background-color: gold;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+.mainContainer .innerContainer .speedCheckBoxCont .speedCheckBox input {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    outline: none;
+    padding: 5px;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+}
+
+.mainContainer .innerContainer .speedCheckBoxCont .speedCheckBox input:focus {
+    border-color: grey;
+    box-shadow: 0 0 6.5px grey;
+}
+
+.wordContainer {
+    padding: 5px;
+    margin: 1px;
+    text-align: center;
+}
+
+.wordContainer span {
+    color: skyblue;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+}
